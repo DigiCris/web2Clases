@@ -9,24 +9,91 @@
             alert("aca estoy");
         }
     </script>
+    <style>
+        .lista2 {
+            color: brown;
+        }        
+        li {
+            color: red;
+        }
+        #lista2-1 {
+            color: yellow;
+        }
+        p[draggable] {
+            color:chartreuse;
+        }
+        p[draggable="true"] {
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+        }
+       
+        a {
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            padding: 5pt;
+            display: inline-block;
+            margin: 5px;
+            width: 120px;
+            height: 40px;
+            border: 2px solid red;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+    ul {
+        list-style: none;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    nav {
+        position: fixed;
+        top:0px;
+        right: 0px;
+        background-color: blueviolet;
+    }
+
+    .block {
+        background-color: red;
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+    }
+
+
+    </style>
 </head>
 <body>
 
 
     <button id="boton" onclick="alertar()"> boton</button>
 
+    <p draggable="true">draggable</p>
+    <a class="block">link bloque</a>
+    <p draggable="false">non draggable</p>
+
     <ol>
-        <li>Lista1</li>
-        <li>Lista2</li>
+        <li style="font-size: 40px; color: 	#800080;">Lista1</li>
+        <li class="lista2" id="lista2-1">Lista2</li>
         <li>Lista3</li>
     </ol>
 
+    <ol>
+        <li style="font-size: 40px; color: 	#800080;">Lista1</li>
+        <li class="lista2">Lista2</li>
+        <li>Lista3</li>
+    </ol>
 
-    <ul>
-        <li><a href="./aboutus.html">acerca de nosotros</a></li>
-        <li> <a href="./registro.html">registrate</a> </li>
-        <li><a href="./index.html">Home</a></li>
-    </ul>
+        <nav>
+            <ul>
+                <li><a href="./aboutus.html">acerca de nosotros</a></li>
+                <li> <a href="./registro.html">registrate</a> </li>
+                <li><a href="./index.html">Home</a></li>
+            </ul>
+        </nav>
+
 
     <h1>Buscador</h1>
     <h2>Escribe lo que deseas buscar</h2>
